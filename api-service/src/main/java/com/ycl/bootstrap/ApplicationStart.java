@@ -25,6 +25,6 @@ public class ApplicationStart implements ServletContextInitializer {
     }
 
     public void onStartup(ServletContext servletContext) throws ServletException {
-        servletContext.setInitParameter("pass_prot", "25010");
+        servletContext.setInitParameter("pass_port", "20080");
     }
 }
