@@ -1,6 +1,9 @@
 package com.ycl.service.impl;
 
-import com.ycl.rpcInterface.ImageService;
+import com.ycl.module.card.entites.ImageInfoEntity;
+import com.ycl.module.card.service.ImageService;
+
+import javax.validation.constraints.NotNull;
 
 /**
  * @author : YangChunLong
@@ -11,5 +14,12 @@ import com.ycl.rpcInterface.ImageService;
  */
 
 public class ImageServiceImpl implements ImageService {
-    
+    @Override
+    public ImageInfoEntity getInfo (@NotNull Long imageId){
+        ImageInfoEntity imageInfoEntity = new ImageInfoEntity();
+        imageInfoEntity.setImageId(imageId);
+        imageInfoEntity.setCreateUser("test");
+        imageInfoEntity.setImageUrl("test");
+        return imageInfoEntity;
+    }
 }

@@ -7,6 +7,6 @@
     <dubbo:application name="api-application"/>
     <dubbo:registry address="${address.zk}"/>
 
-    <dubbo:reference id="imageService" check="false" interface="com.ycl.rpcInterface.ImageService"
+    <dubbo:reference id="imageService" check="false" interface="com.ycl.module.card.service.ImageService"
                      protocol="dubbo" version="0.0.1" group="ycl"/>
 </beans>
