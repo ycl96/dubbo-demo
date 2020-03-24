@@ -1,5 +1,6 @@
 package com.ycl.bootstrap;
 
+import org.apache.curator.framework.CuratorFramework;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
