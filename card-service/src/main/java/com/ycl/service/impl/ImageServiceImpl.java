@@ -2,6 +2,7 @@ package com.ycl.service.impl;
 
 import com.ycl.module.card.entites.ImageInfoEntity;
 import com.ycl.module.card.service.ImageService;
+import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
 
@@ -12,7 +13,7 @@ import javax.validation.constraints.NotNull;
  * @modified By:
  * @version: :
  */
-
+@Service
 public class ImageServiceImpl implements ImageService {
     @Override
     public ImageInfoEntity getInfo (@NotNull Long imageId){

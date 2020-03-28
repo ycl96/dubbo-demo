@@ -1,1 +1,5 @@
 .idea
+api-service/target/
+card-service/target/
+common/target
+user-service/target/

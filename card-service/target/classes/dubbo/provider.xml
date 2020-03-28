@@ -9,6 +9,6 @@
     <dubbo:protocol id="dubbo" name="dubbo" port="${pass_port}"/>
 
     <bean id="imageService" class="com.ycl.service.impl.ImageServiceImpl"/>
-    <dubbo:service interface="com.ycl.rpcInterface.ImageService" ref="imageService" version="0.0.1" group="ycl"/>
+    <dubbo:service interface="com.ycl.module.card.service.ImageService" ref="imageService" version="0.0.1" group="ycl"/>
 
 </beans>
