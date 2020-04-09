@@ -2,9 +2,13 @@ package com.ycl.service.impl;
 
 import com.ycl.module.card.entites.ImageInfoEntity;
 import com.ycl.module.card.service.ImageService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.constraints.NotNull;
+import javax.websocket.Session;
 
 /**
  * @author : YangChunLong
@@ -15,6 +19,8 @@ import javax.validation.constraints.NotNull;
  */
 @Service
 public class ImageServiceImpl implements ImageService {
+    @Autowired
+    private HttpServletRequest httpServletRequest;
     @Override
     public ImageInfoEntity getInfo (@NotNull Long imageId){
         ImageInfoEntity imageInfoEntity = new ImageInfoEntity();

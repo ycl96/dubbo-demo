@@ -30,6 +30,13 @@
         <property name="basePackage" value="com.ycl.dao.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
+    <!-- 配置事务管理器 -->
+    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 多数据源配置 -->
+
 
     <import resource="classpath:dubbo/provider.xml"/>
 
