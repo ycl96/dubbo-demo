@@ -9,6 +9,6 @@
         <setting name="callSettersOnNulls" value="true" />
     </settings>
     <plugins>
-        <plugin interceptor="com.hk.api.interceptors.MybatisInterceptor"></plugin>
+        <plugin interceptor="com.ycl.interceptors.MybatisInterceptor"></plugin>
     </plugins>
 </configuration>

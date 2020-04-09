@@ -1,6 +1,7 @@
 package com.ycl.service.impl.demo;
 
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.stereotype.Component;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -12,7 +13,14 @@ import java.util.ResourceBundle;
  * @modified By:
  * @version: :
  */
+@Component
 public class InternationalDemo extends ReloadableResourceBundleMessageSource {
+
+    public InternationalDemo(){
+        super();
+        setBasename("i18n/resource");
+    }
+
     public static void main(String[] args) {
         Locale locale = new Locale("zh","CN");
         ResourceBundle rbEn = ResourceBundle.getBundle("com/ycl/demo/resource",Locale.US);

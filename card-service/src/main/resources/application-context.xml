@@ -12,6 +12,10 @@
     <!--<aop:aspectj-autoproxy proxy-target-class="true"/>-->
     <context:property-placeholder location="application.properties"/>
 
+    <bean id="messageResource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="i18n.resource"/>
+    </bean>
+
     <!-- 配置数据源 和 数据库连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="${mysql.driver}"/>

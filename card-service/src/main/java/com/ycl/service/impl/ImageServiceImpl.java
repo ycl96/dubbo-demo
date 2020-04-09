@@ -19,8 +19,6 @@ import javax.websocket.Session;
  */
 @Service
 public class ImageServiceImpl implements ImageService {
-    @Autowired
-    private HttpServletRequest httpServletRequest;
     @Override
     public ImageInfoEntity getInfo (@NotNull Long imageId){
         ImageInfoEntity imageInfoEntity = new ImageInfoEntity();
