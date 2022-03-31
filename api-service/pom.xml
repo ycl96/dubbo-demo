@@ -12,7 +12,7 @@
     <artifactId>api-service</artifactId>
 
     <properties>
-        <spring.boot.version>2.2.0.RELEASE</spring.boot.version>
+        <spring.boot.version>2.5.12</spring.boot.version>
         <dubbo.version>2.7.3</dubbo.version>
     </properties>
 
